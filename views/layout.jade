@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    p#nav-title Movie Catalog
+    ul#nav-bar
+      li
+        #[a(href="/") Home] |
+      li
+        #[a(href="/about") About] |
+      li 
+        #[a(href="/movies") Movies]  
+    block content
