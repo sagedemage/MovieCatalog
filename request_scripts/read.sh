@@ -1,1 +1,1 @@
-curl -X GET http://localhost:3000/api/v1/movies/4f71b92d-f1d3-4062-9616-0a4f66f3e6d3
+curl -X GET http://localhost:3000/api/v1/movies/d0057baf-5085-4d39-a67a-962af4e96e4a
