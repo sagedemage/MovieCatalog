@@ -1,10 +1,11 @@
 var AWS = require('aws-sdk');
+require('dotenv').config();
 
 AWS.config.update({
-    accessKeyId: process.env.accessKeyId,
-    secretAccessKey: process.env.secretAccessKey,
-    region: process.env.region,
-    endpoint: process.env.endpoint,
+    accessKeyId: process.env.ACCESS_KEY_ID,
+    secretAccessKey: process.env.SECRET_ACCESS_KEY,
+    region: process.env.REGION,
+    endpoint: process.env.ENDPOINT,
 })
 
 const db = new AWS.DynamoDB.DocumentClient({convertEmptyValues: true});
