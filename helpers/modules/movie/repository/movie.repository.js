@@ -14,7 +14,7 @@ class MovieRepository {
             },
         };
 
-        return await db.get(params).promise();
+        return await db.get(params);
     }
 
     async create(data) {
@@ -59,7 +59,7 @@ class MovieRepository {
             ReturnValues: `UPDATED_NEW`,
         };
 
-        const update = await db.update(params).promise();
+        const update = await db.update(params);
         
         return update.Attributes;
     }
@@ -72,7 +72,7 @@ class MovieRepository {
             },
         };
 
-        return await db.delete(params).promise();
+        return await db.delete(params);
     }
 
 }
