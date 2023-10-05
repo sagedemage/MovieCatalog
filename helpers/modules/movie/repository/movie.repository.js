@@ -40,16 +40,11 @@ class MovieRepository {
             Key: {
                 MovieID: MovieID
             },
-            UpdateExpression: `set #Name = :Name, 
-                                set #Length = :Length,
-                                set #Maturity = :Maturity, 
-                                set #Maturity_Rating = :Maturity_Rating, 
-                                set #Rating = :Rating, 
-                                set #Year = :Year`,
+            UpdateExpression: `set #Name = :Name, #Length = :Length, #Maturity_Rating = :Maturity_Rating, 
+                                #Rating = :Rating, #Year = :Year`,
             ExpressionAttributeNames: {
                 '#Name': `Name`,
                 '#Length': `Length`,
-                '#Maturity': `Maturity`,
                 '#Maturity_Rating': `Maturity_Rating`,
                 '#Rating': `Rating`,
                 '#Year': `Year`,
@@ -57,7 +52,6 @@ class MovieRepository {
             ExpressionAttributeValues: {
                 ":Name": data.Name,
                 ":Length": data.Length,
-                ":Maturity": data.Maturity,
                 ":Maturity_Rating": data.Maturity_Rating,
                 ":Rating": data.Rating,
                 ":Year": data.Year
