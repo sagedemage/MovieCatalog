@@ -1,0 +1,1 @@
+curl -X PATCH http://localhost:3000/api/v1/movies/4f71b92d-f1d3-4062-9616-0a4f66f3e6d3 -H "Content-Type: application/json" -d '{"Name": "Blade Runner", "Length": "2h 2m", "Maturity_Rating": "R", "Rating": 89, "Year": 1982}'
