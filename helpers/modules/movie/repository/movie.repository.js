@@ -30,7 +30,7 @@ class MovieRepository {
             },
         };
 
-        await db.put(params).promise();
+        await db.put(params);
         return params.Item;
     }
 
