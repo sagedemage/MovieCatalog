@@ -12,7 +12,7 @@ class UserService {
     }
 
     async create(data) {
-        return await UserRepository.create(MovieID, {
+        return await UserRepository.create({
             Name: data.Name,
             Length: data.Length,
             Maturity_Rating: data.Maturity_Rating,
@@ -21,7 +21,7 @@ class UserService {
         })
     }
 
-    async update(data) {
+    async update(MovieID, data) {
         return await UserRepository.update(MovieID, {
             Name: data.Name,
             Length: data.Length,
