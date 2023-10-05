@@ -1,4 +1,3 @@
-//var AWS = require('aws-sdk');
 var { DynamoDBDocument } = require("@aws-sdk/lib-dynamodb");
 var { DynamoDB } = require("@aws-sdk/client-dynamodb");
 require('dotenv').config();
