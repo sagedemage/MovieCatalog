@@ -1,0 +1,1 @@
+curl -X POST http://localhost:3000/api/v1/movies -H "Content-Type: application/json" -d '{"Name": "Movie1", "Length": "1hr", "Maturity_Rating": "PG", "Rating": 2, "Year": 2000}'
