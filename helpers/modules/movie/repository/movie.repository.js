@@ -41,7 +41,7 @@ class MovieRepository {
                 MovieID: MovieID
             },
             UpdateExpression: `set #Name = :Name, 
-                                set#Length = :Length, 
+                                set #Length = :Length,
                                 set #Maturity = :Maturity, 
                                 set #Maturity_Rating = :Maturity_Rating, 
                                 set #Rating = :Rating, 
