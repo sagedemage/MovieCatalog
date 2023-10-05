@@ -63,7 +63,11 @@ class MovieRepository {
                 ":Year": data.Year
             },
             ReturnValues: `UPDATED_NEW`,
-        }
+        };
+
+        const update = await db.update(params).promise();
+        
+        return update.Attributes;
     }
 
     async deleteByID(MovieID) {
