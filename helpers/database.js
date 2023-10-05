@@ -1,13 +1,20 @@
-var AWS = require('aws-sdk');
+var { DynamoDBDocument } = require("@aws-sdk/lib-dynamodb");
+var { DynamoDB } = require("@aws-sdk/client-dynamodb");
 require('dotenv').config();
 
-AWS.config.update({
-    accessKeyId: process.env.ACCESS_KEY_ID,
-    secretAccessKey: process.env.SECRET_ACCESS_KEY,
+const dynamodb = new DynamoDB({
     region: process.env.REGION,
     endpoint: process.env.ENDPOINT,
+    credentials: {
+        accessKeyId: process.env.ACCESS_KEY_ID,
+        secretAccessKey: process.env.SECRET_ACCESS_KEY,
+    }
 })
 
-const db = new AWS.DynamoDB.DocumentClient({convertEmptyValues: true});
+const db = DynamoDBDocument.from(dynamodb, {
+    marshallOptions: {
+        convertEmptyValues: true
+    }
+});
 
 module.exports = db;
