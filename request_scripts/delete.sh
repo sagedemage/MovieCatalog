@@ -1,0 +1,1 @@
+curl -X DELETE http://localhost:3000/api/v1/movies/1e9d031e-c056-4404-bbe8-198aaae00b0b
