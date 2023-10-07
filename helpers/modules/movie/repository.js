@@ -1,4 +1,4 @@
-const db = require('../../../database')
+const db = require('../../database')
 const {v4: uuidv4} = require('uuid');
 
 class MovieRepository {
@@ -6,7 +6,7 @@ class MovieRepository {
         this.tableName = 'Movie';
     }
 
-    async findByID(MovieID) {
+    async getByID(MovieID) {
         const params = {
             TableName: this.tableName,
             Key: {

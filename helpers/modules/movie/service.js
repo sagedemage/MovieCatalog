@@ -1,8 +1,8 @@
-const UserRepository = require('../repository/movie.repository');
+const UserRepository = require('./repository');
 
 class UserService {
-    async findByID(MovieID) {
-        const data = await UserRepository.findByID(MovieID);
+    async getByID(MovieID) {
+        const data = await UserRepository.getByID(MovieID);
 
         if (data) {
             return data.Item;

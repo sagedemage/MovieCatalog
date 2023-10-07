@@ -1,8 +1,8 @@
-const MovieService = require('../service/movie.service');
+const MovieService = require('./service');
 
 class MovieController {
-    async findByID(req, res) {
-        const data = await MovieService.findByID(req.params.MovieID)
+    async getByID(req, res) {
+        const data = await MovieService.getByID(req.params.MovieID)
 
         res.json(data)
     }
