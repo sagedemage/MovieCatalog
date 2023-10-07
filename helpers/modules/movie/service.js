@@ -1,6 +1,6 @@
 const MovieRepository = require('./repository');
 
-class UserService {
+class MovieService {
     async getByID(MovieID) {
         const data = await MovieRepository.getByID(MovieID);
 
@@ -40,4 +40,4 @@ class UserService {
     }
 }
 
-module.exports = new UserService()
+module.exports = new MovieService()

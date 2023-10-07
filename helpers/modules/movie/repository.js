@@ -82,8 +82,6 @@ class MovieRepository {
 
         const movies = await db.scan(params);
 
-        console.log(movies.Items);
-
         return movies.Items;
     }
 
