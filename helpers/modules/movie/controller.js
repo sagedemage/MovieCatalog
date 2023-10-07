@@ -24,6 +24,12 @@ class MovieController {
 
         res.json(`Success`)
     }
+
+    async getAll(req, res) {
+        const data = await MovieService.getAll();
+
+        res.json(data);
+    }
 }
 
 module.exports = new MovieController()

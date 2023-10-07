@@ -75,6 +75,18 @@ class MovieRepository {
         return await db.delete(params);
     }
 
+    async getAll() {
+        const params = {
+            TableName: this.tableName,
+        };
+
+        const movies = await db.scan(params);
+
+        console.log(movies.Items);
+
+        return movies.Items;
+    }
+
 }
 
 module.exports = new MovieRepository();
