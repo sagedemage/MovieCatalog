@@ -3,3 +3,17 @@ extends layout
 block content
   h1=title
   p Welcome to the #{title} page.
+  table
+    tr
+      th Maturity Rating 
+      th Year
+      th Length
+      th Rating
+      th Name
+    each movie in movies
+      tr
+        th=movie.Maturity_Rating
+        th=movie.Year
+        th=movie.Length
+        th=movie.Rating 
+        th=movie.Name
