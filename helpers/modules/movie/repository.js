@@ -1,4 +1,4 @@
-const db = require('../../../database')
+const db = require('../../database')
 const {v4: uuidv4} = require('uuid');
 
 class MovieRepository {

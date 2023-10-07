@@ -1,4 +1,4 @@
-const UserRepository = require('../repository/movie.repository');
+const UserRepository = require('./repository');
 
 class UserService {
     async findByID(MovieID) {

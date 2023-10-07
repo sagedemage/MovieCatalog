@@ -1,4 +1,4 @@
-const MovieController = require('../helpers/modules/movie/controller/movie.controller');
+const MovieController = require('../helpers/modules/movie/controller');
 
 var express = require('express');
 var router = express.Router();
