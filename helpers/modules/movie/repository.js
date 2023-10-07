@@ -6,7 +6,7 @@ class MovieRepository {
         this.tableName = 'Movie';
     }
 
-    async findByID(MovieID) {
+    async getByID(MovieID) {
         const params = {
             TableName: this.tableName,
             Key: {
