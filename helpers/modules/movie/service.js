@@ -1,8 +1,8 @@
-const UserRepository = require('./repository');
+const MovieRepository = require('./repository');
 
 class UserService {
     async getByID(MovieID) {
-        const data = await UserRepository.getByID(MovieID);
+        const data = await MovieRepository.getByID(MovieID);
 
         if (data) {
             return data.Item;
@@ -12,7 +12,7 @@ class UserService {
     }
 
     async create(data) {
-        return await UserRepository.create({
+        return await MovieRepository.create({
             Name: data.Name,
             Length: data.Length,
             Maturity_Rating: data.Maturity_Rating,
@@ -22,7 +22,7 @@ class UserService {
     }
 
     async update(MovieID, data) {
-        return await UserRepository.update(MovieID, {
+        return await MovieRepository.update(MovieID, {
             Name: data.Name,
             Length: data.Length,
             Maturity_Rating: data.Maturity_Rating,
@@ -32,7 +32,11 @@ class UserService {
     }
 
     async deleteByID(MovieID) {
-        return await UserRepository.deleteByID(MovieID);
+        return await MovieRepository.deleteByID(MovieID);
+    }
+
+    async getAll() {
+        return await MovieRepository.getAll();
     }
 }
 

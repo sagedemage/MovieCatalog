@@ -7,5 +7,6 @@ router.get(`/v1/movies/:MovieID`, MovieController.getByID);
 router.post(`/v1/movies`, MovieController.create);
 router.patch(`/v1/movies/:MovieID`, MovieController.update);
 router.delete(`/v1/movies/:MovieID`, MovieController.deleteByID);
+router.get(`/v1/movies`, MovieController.getAll);
 
 module.exports = router;
