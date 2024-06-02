@@ -7,10 +7,10 @@ out which movie is best for them. The rating helps users determine which movie i
 ## API Docs
 
 ### Create Movie (CREATE)
-Method: POST
-URL: http://localhost:3000/api/v1/movies
+**Method**: POST \
+**URL**: http://localhost:3000/api/v1/movies
 
-Request body:
+**Request body**:
 ```
 {
   "Name": "Blade Runner 2049",
@@ -22,14 +22,14 @@ Request body:
 ```
 
 ### Get Movie (READ)
-Method: GET
-URL: http://localhost:3000/api/v1/movies/{MovieID}
+**Method**: GET \
+**URL**: http://localhost:3000/api/v1/movies/{MovieID}
 
 ### Update Movie (UPDATE)
-Method: PATCH
-URL: http://localhost:3000/api/v1/movies/{MovieID}
+**Method**: PATCH \
+**URL**: http://localhost:3000/api/v1/movies/{MovieID}
 
-Request body:
+**Request body**:
 ```
 {
   "Name": "Alien",
@@ -41,5 +41,5 @@ Request body:
 ```
 
 ### Delete Movie (DELETE)
-Method: DELETE
-URL: http://localhost:3000/api/v1/movies/{MovieID}
+**Method**: DELETE \
+**URL**: http://localhost:3000/api/v1/movies/{MovieID}
