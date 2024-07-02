@@ -6,6 +6,7 @@ out which movie is best for them. The rating helps users determine which movie i
 
 ## Movie Table Setup
 DynamoDB -> Tables
+
 Click "Create table" button
 
 Enter the following information for the Mopvie table:
