@@ -9,7 +9,7 @@ DynamoDB -> Tables
 
 Click "Create table" button
 
-Enter the following information for the Mopvie table:
+Enter the following information for the Movie table:
 - Table name: Movie
 - Partition key: MovieID
 
