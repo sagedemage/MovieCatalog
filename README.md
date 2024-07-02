@@ -4,6 +4,16 @@ The movie catalog app is a program that shows a list of movies. These movies hav
 like rating, maturity rating, movie length, and year released. This app provides a place for users to figure 
 out which movie is best for them. The rating helps users determine which movie is a good one to watch.
 
+## Movie Table Setup
+DynamoDB -> Tables
+Click "Create table" button
+
+Enter the following information for the Mopvie table:
+- Table name: Movie
+- Partition key: MovieID
+
+Click "Create table" button
+
 ## API Docs
 
 ### Create Movie (CREATE)
